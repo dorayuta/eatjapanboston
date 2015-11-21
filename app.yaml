@@ -9,6 +9,9 @@ handlers:
 - url: /stylesheets
   static_dir: stylesheets
 
+- url: /images
+  static_dir: static/images
+
 - url: /bootstrap
   static_dir: bootstrap-3.3.5-dist
 

@@ -31,7 +31,7 @@ class MainPage(BaseHandler):
     	template_values = {
     		'project_name':PROJECT_NAME,
     		'title':PROJECT_NAME,
-    		'places':['a','b','c']
+    		'favorites':['a','b','c']
     		}
     	self.response.headers['Content-Type'] = 'text/html'
     	self.response.write(template.render(template_values))
@@ -42,18 +42,18 @@ class AboutPage(BaseHandler):
 		template_values = {
 			'project_name':PROJECT_NAME,
 			'title':'About',
-			'places':['a','b','c']
+			'favorites':['a','b','c']
 			}
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(template.render(template_values))
 
-class PlacesPage(BaseHandler):
+class FavoritesPage(BaseHandler):
 	def get(self):
 		template = J_ENV.get_template('places.html')
 		template_values = {
 			'project_name':PROJECT_NAME,
 			'title':'Places',
-			'places':['a','b','c']
+			'favorites':['a','b','c']
 			}
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(template.render(template_values))
@@ -61,7 +61,7 @@ class PlacesPage(BaseHandler):
 app = webapp2.WSGIApplication([
 	(r'/about', AboutPage),
 	webapp2.Route(r'/', handler=MainPage, name='home'),
-	(r'/places', PlacesPage),
+	(r'/favorites', FavoritesPage),
 	],
 	debug=True)
 

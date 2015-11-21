@@ -14,10 +14,11 @@
     </head>
     <body>
     	<nav class="navbar navbar-default navbar-static-top">
-    		<div class="container-fluid">
+    		<div class="container">
     			<!-- Brand and toggle get grouped for better mobile display -->
     			<div class="navbar-header">
-			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+			    	data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			        	<span class="sr-only">Toggle navigation</span>
 			        	<span class="icon-bar"></span>
 			        	<span class="icon-bar"></span>
@@ -31,36 +32,22 @@
 		        		<li><a href="/"> Home <span class="sr-only">(current)</span></a></li>
 		        		<li><a href="/about"> About </a></li>
 		        		<li class="dropdown">
-		        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Places <span class="caret"></span></a>
+		        			<a href="/favorites" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Favorites <span class="caret"></span></a>
 					        <ul class="dropdown-menu">
-					        	{% for place in places %}
-					        	<li><a href="#"> {{ place }} </a></li>
+					        	{% for fav in favorites %}
+					        	<li><a href="#"> {{ fav }} </a></li>
 					        	{% endfor %}
 					        </ul>
 					    </li>
-
 		    		</ul>
-		    		<!-- for if navbar-right is desired.
-				    <ul class="nav navbar-nav navbar-right">
-				        <li><a href="#">Link</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				          </ul>
-				        </li>
-				    </ul>
-				-->
 		    	</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 
 	    {% block content %}
 	    {% endblock %}
+	    <!-- Bootstrap core JavaScript ================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
     	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
