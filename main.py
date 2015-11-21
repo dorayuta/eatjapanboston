@@ -28,14 +28,20 @@ class BaseHandler(webapp2.RequestHandler):
 class MainPage(BaseHandler):
     def get(self):
     	template = J_ENV.get_template('index.html')
-    	template_values = {'project_name':PROJECT_NAME}
+    	template_values = {
+    		'project_name':PROJECT_NAME,
+    		'title':PROJECT_NAME
+    		}
     	self.response.headers['Content-Type'] = 'text/html'
     	self.response.write(template.render(template_values))
 
 class AboutPage(BaseHandler):
 	def get(self):
 		template = J_ENV.get_template('about.html')
-		template_values = {'project_name':PROJECT_NAME}
+		template_values = {
+			'project_name':PROJECT_NAME,
+			'title':'About',
+			}
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(template.render(template_values))
 
@@ -44,8 +50,9 @@ class PlacesPage(BaseHandler):
 		template = J_ENV.get_template('places.html')
 		template_values = {
 			'project_name':PROJECT_NAME,
+			'title':'Places',
 			'places':['a','b','c'],
-		}
+			}
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(template.render(template_values))
  

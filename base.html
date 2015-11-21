@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>
+    		{{ title }}
+    	</title>
+    	<!-- Bootstrap -->
+    	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    </head>
+    <body>
+	   	<nav class="navbar navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand">{{ project_name }}</a>
+	        </div>
+	        <div id="navbar" class="collapse navbar-collapse">
+	          <ul class="nav nav-pills">
+	            <li><a href="/">Home</a></li>
+	            <li><a href="places">Places</a></li>
+	            <li><a href="about">About</a></li>
+	            <li><a href="#contact">Contact</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+	    {% block content %}
+	    {% endblock %}
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
+{% endautoescape %}
