@@ -30,7 +30,8 @@ class MainPage(BaseHandler):
     	template = J_ENV.get_template('index.html')
     	template_values = {
     		'project_name':PROJECT_NAME,
-    		'title':PROJECT_NAME
+    		'title':PROJECT_NAME,
+    		'places':['a','b','c']
     		}
     	self.response.headers['Content-Type'] = 'text/html'
     	self.response.write(template.render(template_values))
@@ -41,6 +42,7 @@ class AboutPage(BaseHandler):
 		template_values = {
 			'project_name':PROJECT_NAME,
 			'title':'About',
+			'places':['a','b','c']
 			}
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(template.render(template_values))
@@ -51,7 +53,7 @@ class PlacesPage(BaseHandler):
 		template_values = {
 			'project_name':PROJECT_NAME,
 			'title':'Places',
-			'places':['a','b','c'],
+			'places':['a','b','c']
 			}
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(template.render(template_values))
