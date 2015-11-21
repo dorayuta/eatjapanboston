@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+	{% for fav in favorites %}
+		<li><h1>{{ fav.name }} </h1></li>
+	{% endfor %}
+</div>
+{% endblock %}
