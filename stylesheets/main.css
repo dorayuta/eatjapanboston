@@ -6,6 +6,10 @@ body {
   	min-height: 2000px;
 }
 
+.container {
+	background-color: #FFFFFF;
+}
+
 .navbar-static-top {
   margin-bottom: 20px;
 }
