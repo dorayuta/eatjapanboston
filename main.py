@@ -22,8 +22,16 @@ with open('restaurants.json') as restaurants_file:
 
 template_values = {
 	'project_name':PROJECT_NAME,
-	'restaurants': restaurants.values()
+	# dictionaries of restaurants sorted by....
+	'restaurants': sorted(restaurants.values())
 	}
+
+# helper to get restaurant info from ID
+def restaurantFromID(ID):
+	for restaurant in template_values['restaurants']:
+		if restaurant['ID'] == ID:
+			return restaurant
+	raise KeyError("Restaurant ID {} is invalid.".format(ID))
 
 class BaseHandler(webapp2.RequestHandler):
     def handle_exception(self, exception, debug):
@@ -67,10 +75,17 @@ class FavoritesPage(BaseHandler):
 		self.response.write(template.render(template_values))
 
 class RestaurantPage(BaseHandler):
-	def get(self, restaurant_name):
-		logging.debug(restaurant_name)
+	def get(self, restaurant_id):
+		global template_values
+		template = J_ENV.get_template('templates/restaurant.html')
+		logging.debug(restaurant_id)
+		restaurant = restaurantFromID(restaurant_id)
+		template_values['restaurant'] = restaurant
+		template_values['title'] = restaurant['name']
+		template_values['address'] = restaurant['address']
+		template_values['root_path'] = '../{}'
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write('<h1> Yay ' +  restaurant_name + '</h1>')
+		self.response.write(template.render(template_values))
 
 app = webapp2.WSGIApplication([
 	(r'/about', AboutPage),

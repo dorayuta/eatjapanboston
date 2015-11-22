@@ -1,9 +1,13 @@
 body {
-  min-height: 2000px;
+	margin: 0;
+	background-color: #000000;
+	background-image: url('images/bgd.png');
+	background-repeat: repeat;
+  	min-height: 2000px;
 }
 
 .navbar-static-top {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .dev-navbar {

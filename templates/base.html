@@ -16,24 +16,22 @@
     <body>
     	<nav class="navbar navbar-default navbar-static-top">
     		<div class="container">
-    			<row>
-				    <a class="navbar-brand" >{{ project_name }}</a>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-		      		<ul class="nav navbar-nav">
-		        		<li><a href="/"> Home <span class="sr-only">(current)</span></a></li>
-		        		<li><a href="/about"> About </a></li>
-		        		<li class="dropdown">
-		        			<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Favorites <span class="caret"></span></a>
-					        <ul class="dropdown-menu">
-					        	{% for fav in restaurants %}
-					        	<li><a href="{{ '/favorites/' + fav['ID'] }}"> {{ fav['name'] }} </a></li>
-					        	{% endfor %}
-					        	<li role="separator" class="divider"></li>
-					        	<li><a href="/favorites"> All Favorites </a></li>
-					        </ul>
-					    </li>
-		    		</ul>
-		    	</row>
+			    <a class="navbar-brand" >{{ project_name }}</a>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+	      		<ul class="nav navbar-nav navbar-right">
+	        		<li><a href="/"> Home <span class="sr-only">(current)</span></a></li>
+	        		<li><a href="/about"> About </a></li>
+	        		<li class="dropdown">
+	        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Favorites <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				        	{% for fav in restaurants %}
+				        	<li><a href="{{ '/favorites/' + fav['ID'] }}"> {{ fav['name'] }} </a></li>
+				        	{% endfor %}
+				        	<li role="separator" class="divider"></li>
+				        	<li><a href="/favorites"> All Favorites </a></li>
+				        </ul>
+				    </li>
+	    		</ul>
 			</div><!-- /.container-fluid -->
 		</nav>
 
