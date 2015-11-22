@@ -1,0 +1,26 @@
+{
+	"1":{
+		"name":"Yume Wo Katare",
+		"ID":"yume-wo-katare-cambridge",
+		"content":"A great place for garlic with ramen.",
+		"img":"images/ortiz.png"
+	},
+	"2":{
+		"name":"Santouka",
+		"ID":"santouka-cambridge",
+		"content":"Good standard ramen.",
+		"img":"images/ortiz.png"
+	},
+	"3":{
+		"name":"Shiki",
+		"ID":"shiki-brookline",
+		"content":"Quiet, authentic food.",
+		"img":"images/ortiz.png"
+	},
+	"4":{
+		"name":"Toraya",
+		"ID":"toraya-arlington",
+		"content":"Want to try it.",
+		"img":"images/ortiz.png"
+	}
+}

@@ -35,7 +35,7 @@
 		        			<a href="/favorites" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Favorites <span class="caret"></span></a>
 					        <ul class="dropdown-menu">
 					        	{% for fav in favorites %}
-					        	<li><a href="/favorites"> {{ fav.name }} </a></li>
+					        	<li><a href="{{ '/favorites/' + fav.ID }}"> {{ fav.name }} </a></li>
 					        	{% endfor %}
 					        </ul>
 					    </li>
