@@ -3,13 +3,16 @@
 {% block content %}
 <div class="container">
 	<h1> hello. </h1>
-</div>
-<div class="container">
-	<div class="jumbotron">
-		<div class="jumbotron">
-			<img src="images/ortiz.png"></img>
-		</div>
-		<h1>welcome.</h1>
-	</div>
+	<p class="big"> My favorite Japanese restaurants along the Charles. </p>
+	<blocks cols="3">
+		{% for i in range(10) %}
+		<div>
+			<img src="images/BGD.png" />
+		<div>
+		<div>
+			<img src="images/BGD.png" />
+		<div>
+		{% endfor %}
+	</blocks>
 </div>
 {% endblock %}
