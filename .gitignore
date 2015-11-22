@@ -1,1 +1,4 @@
-
+/tmp
+.*\.swp
+bootstrap.*
+*.pyc
