@@ -1,0 +1,31 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+<div class="container">
+	<row>
+		<column cols="3">
+			<div class="thumbnail">
+	      		<img src="{{ root_path.format(restaurant['img']) }}" alt="...">
+	      		<div class="caption">
+					<h1> {{ title }} </h1>
+					<h5 class="thin"> {{ address['neighborhood'] }}</h5>
+					<br>
+					<address>
+						{{ address['street'] }} <br>
+						{{ "{}, {} {}".format(address['city'], address['state'], address['zip']) }} <br>
+					</address>
+	      		</div>
+	    	</div>
+		</column>
+		<column cols="6">
+			<p class="light">
+				{{ restaurant['content'] }}
+			<br>
+			<br>
+
+			</p>
+			<br>
+		</column>
+	</row>
+</div>
+{% endblock %}

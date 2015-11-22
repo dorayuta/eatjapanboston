@@ -10,15 +10,15 @@
     	</title>
     	<!-- Bootstrap -->
     	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
-    	<link rel="stylesheet" href="/stylesheets/kube.min.css"/>
+    	<link rel="stylesheet" href="/stylesheets/jumbotron-narrow.css">
+    	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css">
+    	<link rel="stylesheet" href="/stylesheets/kube.min.css">
     </head>
     <body>
-    	<nav class="navbar navbar-default navbar-static-top">
-    		<div class="container">
-			    <a class="navbar-brand" >{{ project_name }}</a>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-	      		<ul class="nav navbar-nav navbar-right">
+    	<div class="container">
+			<div class="header clearfix">
+		        <nav>
+		          <ul class="nav nav-pills pull-right">
 	        		<li><a href="/"> Home <span class="sr-only">(current)</span></a></li>
 	        		<li><a href="/about"> About </a></li>
 	        		<li class="dropdown">
@@ -31,9 +31,11 @@
 				        	<li><a href="/favorites"> All Favorites </a></li>
 				        </ul>
 				    </li>
-	    		</ul>
-			</div><!-- /.container-fluid -->
-		</nav>
+		          </ul>
+		        </nav>
+	        	<h3 class="text-muted navbar-brand">{{ project_name }}</h3>
+	      	</div>
+	    </div>
 
 	    {% block content %}
 	    {% endblock %}
