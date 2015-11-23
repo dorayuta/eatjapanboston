@@ -4,7 +4,7 @@
 <div class="container">
 	<row>
 		<column cols="3">
-			<div class="thumbnail">
+			<div class="thumbnail thumbnail-cover">
 	      		<img src="{{ root_path.format(restaurant['img']) }}" alt="...">
 	      		<div class="caption">
 					<h1> {{ title }} </h1>
@@ -18,13 +18,15 @@
 	    	</div>
 		</column>
 		<column cols="6">
-			<p class="light">
-				{{ restaurant['content'] }}
-			<br>
-			<br>
+			<div class="thumbnail thumbnail-text">
+				<p class="light">
+					{{ restaurant['content'] }}
+				<br>
+				<br>
 
-			</p>
-			<br>
+				</p>
+				<br>
+			</div>
 		</column>
 	</row>
 </div>
