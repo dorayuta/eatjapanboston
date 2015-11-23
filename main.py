@@ -24,7 +24,7 @@ template_values = {
 	'project_name':PROJECT_NAME,
 	# dictionaries of restaurants sorted by....
 	'restaurants': sorted(restaurants.values()),
-	'root_path':'./{}'
+	'root_path':'/{}'
 	}
 
 # helper to get restaurant info from ID
