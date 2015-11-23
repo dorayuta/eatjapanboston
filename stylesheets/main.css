@@ -1,13 +1,21 @@
 body {
 	margin: 0;
-	background-color: #000000;
-	background-image: url('images/bgd.png');
+	background-color: #FFFFFF;
 	background-repeat: repeat;
   	min-height: 2000px;
 }
 
+.thumbnail {
+	margin-top:10px;
+	border-radius: 0;
+}
+.thumbnail-cover {
+	max-width: 200px;
+}
+.thumbnail-text {
+	border: none;
+}
 .container {
-	background-color: #FFFFFF;
 }
 
 .navbar-static-top {

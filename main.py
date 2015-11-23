@@ -23,7 +23,8 @@ with open('restaurants.json') as restaurants_file:
 template_values = {
 	'project_name':PROJECT_NAME,
 	# dictionaries of restaurants sorted by....
-	'restaurants': sorted(restaurants.values())
+	'restaurants': sorted(restaurants.values()),
+	'root_path':'./{}'
 	}
 
 # helper to get restaurant info from ID
@@ -79,6 +80,7 @@ class RestaurantPage(BaseHandler):
 		global template_values
 		template = J_ENV.get_template('templates/restaurant.html')
 		logging.debug(restaurant_id)
+		logging.debug(template_values['restaurants'])
 		restaurant = restaurantFromID(restaurant_id)
 		template_values['restaurant'] = restaurant
 		template_values['title'] = restaurant['name']
