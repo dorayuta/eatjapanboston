@@ -4,11 +4,13 @@
 <div class="container">
 	<blocks cols="3">
     	{% for fav in restaurants %}
-    	<div class="thumbnail">
+    	<div class="thumbnail thumbnail-cover">
       		<img src="{{ fav['img'] }}" alt="...">
       		<div class="caption">
-        		<h3> {{ fav['name'] }} </h3>
-	        	<p> {{ fav['content'] }} </p>
+        		<p> 
+        		{{ fav['name'] }} <br>
+	        	{{ fav['content'] }}
+	        	</p>
       		</div>
     	</div>
     	{% endfor %}

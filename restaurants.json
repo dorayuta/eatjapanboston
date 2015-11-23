@@ -2,7 +2,7 @@
 	"1":{
 		"name":"Yume Wo Katare",
 		"ID":"yume-wo-katare-cambridge",
-		"content":"A great place for garlic with ramen.",
+		"content":"A great place strong broth and thick ramen. Also lots of garlic.",
 		"img":"images/ortiz.png",
 		"address":{
 			"street":"1923 Massachusetts Ave",
@@ -15,7 +15,7 @@
 	"2":{
 		"name":"Santouka",
 		"ID":"santouka-cambridge",
-		"content":"Good standard ramen.",
+		"content":"Good, hearty ramen.",
 		"img":"images/ortiz.png",
 		"address":{
 			"street":"1 Bow St",
@@ -41,7 +41,7 @@
 	"4":{
 		"name":"Toraya",
 		"ID":"toraya-arlington",
-		"content":"Want to try it.",
+		"content":"I have yet to try Toraya, but I have heard great things about it.",
 		"img":"images/ortiz.png",
 		"address":{
 			"street":"890 Massachusetts Ave",

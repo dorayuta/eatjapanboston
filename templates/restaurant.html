@@ -3,13 +3,12 @@
 {% block content %}
 <div class="container">
 	<row>
-		<column cols="3">
+		<column cols="4">
 			<div class="thumbnail thumbnail-cover">
 	      		<img src="{{ root_path.format(restaurant['img']) }}" alt="...">
 	      		<div class="caption">
 					<h1> {{ title }} </h1>
 					<h5 class="thin"> {{ address['neighborhood'] }}</h5>
-					<br>
 					<address>
 						{{ address['street'] }} <br>
 						{{ "{}, {} {}".format(address['city'], address['state'], address['zip']) }} <br>
@@ -17,7 +16,7 @@
 	      		</div>
 	    	</div>
 		</column>
-		<column cols="6">
+		<column cols="8">
 			<div class="thumbnail thumbnail-text">
 				<p class="light">
 					{{ restaurant['content'] }}
