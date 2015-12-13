@@ -3,7 +3,7 @@
 		"name":"Yume Wo Katare",
 		"ID":"yume-wo-katare-cambridge",
 		"content":"A great place strong broth and thick ramen. Also lots of garlic.",
-		"img":"images/ortiz.png",
+		"img":"images/coming_soon.png",
 		"address":{
 			"street":"1923 Massachusetts Ave",
 			"city":"Cambridge",
@@ -16,7 +16,7 @@
 		"name":"Santouka",
 		"ID":"santouka-cambridge",
 		"content":"Good, hearty ramen.",
-		"img":"images/ortiz.png",
+		"img":"images/coming_soon.png",
 		"address":{
 			"street":"1 Bow St",
 			"city":"Cambridge",
@@ -29,7 +29,7 @@
 		"name":"Shiki",
 		"ID":"shiki-brookline",
 		"content":"Quiet, authentic food.",
-		"img":"images/ortiz.png",
+		"img":"images/coming_soon.png",
 		"address":{
 			"street":"9 Babcock St",
 			"city":"Brookline",
@@ -42,7 +42,7 @@
 		"name":"Toraya",
 		"ID":"toraya-arlington",
 		"content":"I have yet to try Toraya, but I have heard great things about it.",
-		"img":"images/ortiz.png",
+		"img":"images/coming_soon.png",
 		"address":{
 			"street":"890 Massachusetts Ave",
 			"city":"Arlington",
@@ -54,7 +54,7 @@
 	"5":{
 		"name":"Ganko Ittetsu",
 		"ID":"ganko-ittetsu-ramen-brookline",
-		"content":"Ittetsu has ramen with flavorful yet not exceedingly heavy broth.",
+		"content":"Ittetsu has ramen with flavorful yet not too heavy broth.",
 		"img":"images/ganko_front.png",
 		"address":{
 			"street":"318 Harvard St",
