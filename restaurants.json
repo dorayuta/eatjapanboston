@@ -50,5 +50,18 @@
 			"state":"MA",
 			"zip":"02476"
 		}
+	},
+	"5":{
+		"name":"Ganko Ittetsu",
+		"ID":"ganko-ittetsu-ramen-brookline",
+		"content":"Ittetsu has ramen with flavorful yet not exceedingly heavy broth.",
+		"img":"images/ganko_front.png",
+		"address":{
+			"street":"318 Harvard St",
+			"city":"Brookline",
+			"neighborhood":"Coolidge Corner",
+			"state":"MA",
+			"zip":"02446"
+		}
 	}
 }
